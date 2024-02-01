@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftdemangle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/oozoofrog/SwiftDemangle",
+      "state" : {
+        "revision" : "95df46bac92d720c3a27637c0baeb3105b390e7b",
+        "version" : "5.9.1"
+      }
+    }
+  ],
+  "version" : 2
+}

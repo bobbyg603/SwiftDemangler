@@ -11,6 +11,8 @@
 		C5A5F9582B6BF77400879BF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A5F9572B6BF77400879BF4 /* ContentView.swift */; };
 		C5A5F95A2B6BF77600879BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A5F9592B6BF77600879BF4 /* Assets.xcassets */; };
 		C5A5F95D2B6BF77600879BF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A5F95C2B6BF77600879BF4 /* Preview Assets.xcassets */; };
+		C5A5F9662B6BF7DD00879BF4 /* SwiftDemangle in Frameworks */ = {isa = PBXBuildFile; productRef = C5A5F9652B6BF7DD00879BF4 /* SwiftDemangle */; };
+		C5A5F9682B6BF7DD00879BF4 /* SwiftDemangleFramework in Frameworks */ = {isa = PBXBuildFile; productRef = C5A5F9672B6BF7DD00879BF4 /* SwiftDemangleFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A5F9682B6BF7DD00879BF4 /* SwiftDemangleFramework in Frameworks */,
+				C5A5F9662B6BF7DD00879BF4 /* SwiftDemangle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,10 @@
 			dependencies = (
 			);
 			name = SwiftDemangler;
+			packageProductDependencies = (
+				C5A5F9652B6BF7DD00879BF4 /* SwiftDemangle */,
+				C5A5F9672B6BF7DD00879BF4 /* SwiftDemangleFramework */,
+			);
 			productName = SwiftDemangler;
 			productReference = C5A5F9522B6BF77400879BF4 /* SwiftDemangler.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +121,9 @@
 				Base,
 			);
 			mainGroup = C5A5F9492B6BF77400879BF4;
+			packageReferences = (
+				C5A5F9642B6BF7DD00879BF4 /* XCRemoteSwiftPackageReference "SwiftDemangle" */,
+			);
 			productRefGroup = C5A5F9532B6BF77400879BF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +352,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5A5F9642B6BF7DD00879BF4 /* XCRemoteSwiftPackageReference "SwiftDemangle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oozoofrog/SwiftDemangle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5A5F9652B6BF7DD00879BF4 /* SwiftDemangle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5A5F9642B6BF7DD00879BF4 /* XCRemoteSwiftPackageReference "SwiftDemangle" */;
+			productName = SwiftDemangle;
+		};
+		C5A5F9672B6BF7DD00879BF4 /* SwiftDemangleFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5A5F9642B6BF7DD00879BF4 /* XCRemoteSwiftPackageReference "SwiftDemangle" */;
+			productName = SwiftDemangleFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5A5F94A2B6BF77400879BF4 /* Project object */;
 }
